@@ -35,6 +35,7 @@ port: process.env.RDS_PORT}));
 function init() {
 app.get('/', routes.index);
 app.get('/hikes', hike.index);
+//app.get('/hikes', hike.hike);
 app.post('/add_hike', hike.add_hike);
 }
 
