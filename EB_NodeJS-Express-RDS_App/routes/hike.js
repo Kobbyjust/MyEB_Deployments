@@ -1,10 +1,4 @@
-// exports.index = function(req, res) {
-//     res.render('hike', {title: 'My Hiking Log'});
-//    };
-   
-//    exports.add_hike = function(req, res) {
-//    };
-
+//
    const uuid = require('node-uuid');
    exports.index = function(req, res) {
      res.app.get('connection').query( 'SELECT * FROM HIKES', function(err,
